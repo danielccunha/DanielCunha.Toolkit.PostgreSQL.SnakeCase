@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <Title>DanielCunha.Toolkit.PostgreSQL.SnakeCase</Title>
+        <Authors>Daniel Cunha</Authors>
+        <Description>Pre-configured DbContext which automatically converts your tables and columns to snake case (PostgreSQL default syntax)</Description>
+        <PackageProjectUrl>https://github.com/danielccunha/DanielCunha.Toolkit.PostgreSQL.SnakeCase</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/danielccunha/DanielCunha.Toolkit.PostgreSQL.SnakeCase/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/danielccunha/DanielCunha.Toolkit.PostgreSQL.SnakeCase/master/img/postgresql_icon.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/danielccunha/DanielCunha.Toolkit.PostgreSQL.SnakeCase</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <PackageTags>Entity Framework, Entity Framework Core, PostgreSQL, Snake Case</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0" />
+    </ItemGroup>
+
+</Project>
