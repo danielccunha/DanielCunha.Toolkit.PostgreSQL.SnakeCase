@@ -6,9 +6,9 @@ This package basically contains a **pre-configured** DbContext which automatical
 
 Have you ever created a table in PostgreSQL using **Pascal Case**? This is the default syntax used by Entity Framework Core, specially when you are generating your database using migrations.
 
-It's horrible to work with, at least using pgAdmin 4, because it breaks the default syntax. Therefore, you have to access every property and table using double quotes, otherwise PostgreSQL will not find the table/column.
+It's horrible to work with, at least using pgAdmin 4, because it breaks the default syntax. Therefore, you have to reference every column and table using double quotes, otherwise PostgreSQL will not find the table/column.
 
-The goal of this package is to automatically convert your classes (tables) and properties (columns) into snake case when talking to the database, without having to change the default syntax of .NET.
+The goal of this package is to automatically convert your classes (tables) and properties (columns) into snake case when talking to the database, without having to change the default syntax of .NET projects.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Install NuGet package **DanielCunha.Toolkit.PostgreSQL** or download repo and co
 
 ## Usage
 
-Working on it...
+Just inherit your implementation of the DbContext from **SnakeCaseDbContext** and it's done. Now, try to generate a migration and you'll see your properties being generated in **snake_case_syntax**.
 
 ## Contribute
 
