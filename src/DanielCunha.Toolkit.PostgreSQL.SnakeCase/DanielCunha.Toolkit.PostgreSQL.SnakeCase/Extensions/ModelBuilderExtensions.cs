@@ -1,14 +1,12 @@
 using DanielCunha.Toolkit.PostgreSQL.SnakeCase.Extensions;
-using Microsoft.EntityFrameworkCore;
 
-namespace DanielCunha.Toolkit.PostgreSQL.SnakeCase
+// ReSharper disable once CheckNamespace
+namespace Microsoft.EntityFrameworkCore
 {
-    public abstract class SnakeCaseDbContext : DbContext
+    public static class ModelBuilderExtensions
     {
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public static void ApplySnakeCase(this ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            
             // Lower case all columns and tables (configuration for PostgreSQL)
             foreach(var entity in modelBuilder.Model.GetEntityTypes())
             {
