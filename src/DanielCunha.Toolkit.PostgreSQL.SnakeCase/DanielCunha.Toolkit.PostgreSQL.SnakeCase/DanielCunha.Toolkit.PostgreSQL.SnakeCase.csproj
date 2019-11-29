@@ -11,6 +11,7 @@
         <RepositoryUrl>https://github.com/danielccunha/DanielCunha.Toolkit.PostgreSQL.SnakeCase</RepositoryUrl>
         <RepositoryType>Public</RepositoryType>
         <PackageTags>Entity Framework, Entity Framework Core, PostgreSQL, Snake Case</PackageTags>
+        <PackageVersion>1.1.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
